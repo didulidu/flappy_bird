@@ -3,6 +3,7 @@ import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import GameScreen from './screens/GameScreen';
 
 function HomeScreen({navigation}) {
   return (
@@ -10,14 +11,6 @@ function HomeScreen({navigation}) {
       <TouchableOpacity onPress={() => navigation.navigate("Game")}>
         <Text>Tap to play!</Text>
       </TouchableOpacity>
-    </View>
-  );
-}
-
-function GameScreen() {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Game Screen</Text>
     </View>
   );
 }
