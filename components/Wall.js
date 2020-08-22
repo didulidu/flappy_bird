@@ -18,7 +18,7 @@ const Wall = ({size, body, color}) => {
                 height: height,
                 backgroundColor: color
             }}>
-            <Image source={require('../assets/images/floor.png')}  resizeMode="contain"/>
+            <Image source={require('../assets/images/floor.png')}  style={{ flex: 1}} resizeMode="contain"/>
         </View>
     );
 }
